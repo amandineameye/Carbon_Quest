@@ -10,7 +10,7 @@ const Login = ({ onSwitchToSignup, onSuccessfulConnection }) => {
 	const [errorMessage, setErrorMessage] = useState("");
 
 	const navigate = useNavigate();
-	const apiURL = "https://carbon-quest-api.vercel.app/";
+	const apiURL = "https://super-carbon-quest-api.vercel.app/";
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();

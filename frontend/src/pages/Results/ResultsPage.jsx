@@ -12,7 +12,7 @@ const ResultsPage = () => {
 	const location = useLocation();
 	const [allScores, setAllScores] = useState([]);
 	const { username, currentScore, answersToNumbersArray } = location.state;
-	const apiURL = "https://carbon-quest-api.vercel.app/";
+	const apiURL = "https://super-carbon-quest-api.vercel.app/";
 
 	const userScores = allScores.slice(0, -1);
 
