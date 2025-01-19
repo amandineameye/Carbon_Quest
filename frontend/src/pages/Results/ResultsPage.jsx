@@ -12,7 +12,7 @@ const ResultsPage = () => {
 	const location = useLocation();
 	const [allScores, setAllScores] = useState([]);
 	const { username, currentScore, answersToNumbersArray } = location.state;
-	const apiURL = "https://super-carbon-quest-api.vercel.app/";
+	const apiURL = import.meta.env.VITE_API_URL;
 
 	const userScores = allScores.slice(0, -1);
 
@@ -94,6 +94,19 @@ const ResultsPage = () => {
 			<main className="flex-1">
 				<div className="container text-center mt-14">
 					<h1>Le résultat de ta quête</h1>
+					<div className="container text-center mt-8 max-w-screen-lg">
+						<p className="text-lg">Bravo ! 🎉 Tu as terminé le quiz !</p>
+						<p className="text-lg mt-2">
+							Sur cette page, tu peux découvrir ton score final et revoir chaque
+							question en détail. Pour chacune, tu verras la bonne réponse ainsi
+							que celle que tu as donnée. Si ta réponse est en rouge, il y a une
+							erreur.
+						</p>
+						<p className="text-lg mt-2">
+							Prends le temps de parcourir tes résultats et devenir incollable
+							pour la prochaine fois. 💪
+						</p>
+					</div>
 					<div className="bg-[#f5f8f6] rounded-lg p-8 w-1/2 mx-auto mt-12">
 						<h2>Ton score</h2>
 						{result()}
@@ -122,20 +135,24 @@ const ResultsPage = () => {
 				</button>
 
 				<div className="container py-16">
-					<div className="py-2 px-6 bg-white rounded-lg w-9/12 mx-auto">
+					<div className="py-2 px-6 bg-white rounded-lg max-w-screen-lg mx-auto">
 						<Accordion>
 							<AccordionHeader>
 								1. L’optimisation des images sur un site web peut réduire la
 								consommation de bande passante et d’énergie.
 							</AccordionHeader>
 							<AccordionPanel>
-								<p
-									className={
-										answersToNumbersArray?.[0] === 1 ? "resTrue" : "resFalse"
-									}
-								>
-									Vrai
-								</p>
+								<div className="flex gap-6 items-center mb-4">
+									<p>Bonne réponse : Vrai</p>
+									<p
+										className={
+											answersToNumbersArray?.[0] === 1 ? "resTrue" : "resFalse"
+										}
+									>
+										Ta réponse :{" "}
+										{answersToNumbersArray?.[0] === 1 ? "Vrai" : "Faux"}
+									</p>
+								</div>
 								<p className="mb-2">
 									Des images optimisées chargent plus rapidement et consomment
 									moins de données, ce qui réduit la consommation d'énergie liée
@@ -156,13 +173,17 @@ const ResultsPage = () => {
 								améliore la performance et réduit la consommation de données.
 							</AccordionHeader>
 							<AccordionPanel>
-								<p
-									className={
-										answersToNumbersArray?.[1] === 1 ? "resTrue" : "resFalse"
-									}
-								>
-									Faux
-								</p>
+								<div className="flex gap-6 items-center mb-4">
+									<p>Bonne réponse : Faux</p>
+									<p
+										className={
+											answersToNumbersArray?.[1] === 1 ? "resTrue" : "resFalse"
+										}
+									>
+										Ta réponse :{" "}
+										{answersToNumbersArray?.[1] === 1 ? "Faux" : "Vrai"}
+									</p>
+								</div>
 								<p className="mb-2">
 									Précharger trop de ressources peut en réalité surcharger le
 									navigateur et consommer des ressources inutiles, entraînant
@@ -186,13 +207,17 @@ const ResultsPage = () => {
 								environnemental.
 							</AccordionHeader>
 							<AccordionPanel>
-								<p
-									className={
-										answersToNumbersArray?.[2] === 1 ? "resTrue" : "resFalse"
-									}
-								>
-									Vrai
-								</p>
+								<div className="flex gap-6 items-center mb-4">
+									<p>Bonne réponse : Vrai</p>
+									<p
+										className={
+											answersToNumbersArray?.[2] === 1 ? "resTrue" : "resFalse"
+										}
+									>
+										Ta réponse :{" "}
+										{answersToNumbersArray?.[2] === 1 ? "Vrai" : "Faux"}
+									</p>
+								</div>
 								<p className="mb-2">
 									Charger les polices localement ou de manière asynchrone permet
 									de réduire le nombre de requêtes serveur et d’améliorer les
@@ -214,13 +239,17 @@ const ResultsPage = () => {
 								significatif sur l’empreinte carbone d’un service numérique.
 							</AccordionHeader>
 							<AccordionPanel>
-								<p
-									className={
-										answersToNumbersArray?.[3] === 1 ? "resTrue" : "resFalse"
-									}
-								>
-									Faux
-								</p>
+								<div className="flex gap-6 items-center mb-4">
+									<p>Bonne réponse : Faux</p>
+									<p
+										className={
+											answersToNumbersArray?.[3] === 1 ? "resTrue" : "resFalse"
+										}
+									>
+										Ta réponse :{" "}
+										{answersToNumbersArray?.[3] === 1 ? "Faux" : "Vrai"}
+									</p>
+								</div>
 								<p className="mb-2">
 									Les serveurs verts ou à faible consommation énergétique
 									peuvent réduire significativement les émissions de CO2 d’un
@@ -241,13 +270,17 @@ const ResultsPage = () => {
 								qu'aucun utilisateur ne l'utilise.
 							</AccordionHeader>
 							<AccordionPanel>
-								<p
-									className={
-										answersToNumbersArray?.[4] === 1 ? "resTrue" : "resFalse"
-									}
-								>
-									Faux
-								</p>
+								<div className="flex gap-6 items-center mb-4">
+									<p>Bonne réponse : Faux</p>
+									<p
+										className={
+											answersToNumbersArray?.[4] === 1 ? "resTrue" : "resFalse"
+										}
+									>
+										Ta réponse :{" "}
+										{answersToNumbersArray?.[4] === 1 ? "Faux" : "Vrai"}
+									</p>
+								</div>
 								<p className="mb-2">
 									Même sans trafic, les serveurs qui hébergent le site
 									continuent de consommer de l’énergie pour maintenir le service
@@ -268,13 +301,17 @@ const ResultsPage = () => {
 								globales de gaz à effet de serre.
 							</AccordionHeader>
 							<AccordionPanel>
-								<p
-									className={
-										answersToNumbersArray?.[5] === 1 ? "resTrue" : "resFalse"
-									}
-								>
-									Faux
-								</p>
+								<div className="flex gap-6 items-center mb-4">
+									<p>Bonne réponse : Faux</p>
+									<p
+										className={
+											answersToNumbersArray?.[5] === 1 ? "resTrue" : "resFalse"
+										}
+									>
+										Ta réponse :{" "}
+										{answersToNumbersArray?.[5] === 1 ? "Faux" : "Vrai"}
+									</p>
+								</div>
 								<p className="mb-2">
 									Le secteur du numérique représente environ 4% des émissions
 									mondiales de gaz à effet de serre, un chiffre qui continue de
@@ -296,13 +333,17 @@ const ResultsPage = () => {
 								utilisateur.
 							</AccordionHeader>
 							<AccordionPanel>
-								<p
-									className={
-										answersToNumbersArray?.[6] === 1 ? "resTrue" : "resFalse"
-									}
-								>
-									Vrai
-								</p>
+								<div className="flex gap-6 items-center mb-4">
+									<p>Bonne réponse : Vrai</p>
+									<p
+										className={
+											answersToNumbersArray?.[6] === 1 ? "resTrue" : "resFalse"
+										}
+									>
+										Ta réponse :{" "}
+										{answersToNumbersArray?.[6] === 1 ? "Vrai" : "Faux"}
+									</p>
+								</div>
 								<p className="mb-2">
 									Les animations et les vidéos en lecture automatique consomment
 									beaucoup de bande passante et nécessitent davantage de
@@ -324,13 +365,17 @@ const ResultsPage = () => {
 								complexes aide à réduire l'empreinte carbone des sites web.
 							</AccordionHeader>
 							<AccordionPanel>
-								<p
-									className={
-										answersToNumbersArray?.[7] === 1 ? "resTrue" : "resFalse"
-									}
-								>
-									Vrai
-								</p>
+								<div className="flex gap-6 items-center mb-4">
+									<p>Bonne réponse : Vrai</p>
+									<p
+										className={
+											answersToNumbersArray?.[7] === 1 ? "resTrue" : "resFalse"
+										}
+									>
+										Ta réponse :{" "}
+										{answersToNumbersArray?.[7] === 1 ? "Vrai" : "Faux"}
+									</p>
+								</div>
 								<p className="mb-2">
 									Les frameworks légers nécessitent moins de ressources pour
 									être exécutés, réduisant ainsi l’énergie consommée par les
@@ -352,13 +397,17 @@ const ResultsPage = () => {
 								consommation d’énergie sur tous les appareils.
 							</AccordionHeader>
 							<AccordionPanel>
-								<p
-									className={
-										answersToNumbersArray?.[8] === 1 ? "resTrue" : "resFalse"
-									}
-								>
-									Faux
-								</p>
+								<div className="flex gap-6 items-center mb-4">
+									<p>Bonne réponse : Faux</p>
+									<p
+										className={
+											answersToNumbersArray?.[8] === 1 ? "resTrue" : "resFalse"
+										}
+									>
+										Ta réponse :{" "}
+										{answersToNumbersArray?.[8] === 1 ? "Faux" : "Vrai"}
+									</p>
+								</div>
 								<p className="mb-2">
 									Le mode sombre économise de l’énergie surtout sur les écrans
 									OLED, mais l’impact est moindre sur les écrans LCD.
@@ -378,13 +427,17 @@ const ResultsPage = () => {
 								les impacts négatifs du numérique sur l’environnement.
 							</AccordionHeader>
 							<AccordionPanel>
-								<p
-									className={
-										answersToNumbersArray?.[9] === 1 ? "resTrue" : "resFalse"
-									}
-								>
-									Vrai
-								</p>
+								<div className="flex gap-6 items-center mb-4">
+									<p>Bonne réponse : Vrai</p>
+									<p
+										className={
+											answersToNumbersArray?.[9] === 1 ? "resTrue" : "resFalse"
+										}
+									>
+										Ta réponse :{" "}
+										{answersToNumbersArray?.[9] === 1 ? "Vrai" : "Faux"}
+									</p>
+								</div>
 								<p className="mb-2">
 									Recycler les appareils réduit la quantité de matières
 									premières nécessaires à la fabrication de nouveaux
@@ -407,22 +460,3 @@ const ResultsPage = () => {
 };
 
 export default ResultsPage;
-
-// const getResultInfo = (score) => {
-//     if (score <= 4) return { title: "Nouveau-né du Green IT", description: "Tu commences à découvrir le sujet.", color: "custom-pink" };
-//     if (score === 5) return { title: "Apprenti Écoresponsable", description: "Tu es en bonne voie mais il te reste des progrès à faire.", color: "custom-purple" };
-//     if (score >= 6 && score <= 8) return { title: "Éco-Explorateur", description: "Tu maîtrises bien les bases du Green IT.", color: "custom-yellow" };
-//     return { title: "Green IT Guru", description: "Tu excelles sur le sujet !", color: "custom-light-green" };
-//   };
-
-//   const resultInfo = getResultInfo(currentScore);
-
-//   return (
-//     <div>
-//       <h3 className={`bg-${resultInfo.color} p-1 rounded-sm`}>{resultInfo.title}</h3>
-//       <p>{resultInfo.description}</p>
-//       <div className={`mt-4 rounded-full mx-auto bg-${resultInfo.color} w-20 h-20 flex items-center justify-center text-white text-4xl font-bold`}>
-//         {currentScore}
-//       </div>
-//     </div>
-//   );
