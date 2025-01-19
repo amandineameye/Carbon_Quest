@@ -7,13 +7,13 @@ const cors = require("cors");
 // Middleware to parse JSON bodies
 app.use(express.json());
 
-app.use(
-	cors({
-		origin: "*", // Your frontend URL
-		methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], // Allowed HTTP methods
-		credentials: true, // Allow cookies if needed
-	})
-);
+// app.use(
+// 	cors({
+// 		origin: "*", // Your frontend URL
+// 		methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], // Allowed HTTP methods
+// 		credentials: true, // Allow cookies if needed
+// 	})
+// );
 
 // Connect to MongoDB
 mongoose
