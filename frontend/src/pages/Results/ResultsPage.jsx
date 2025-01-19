@@ -98,12 +98,12 @@ const ResultsPage = () => {
 						<p className="text-lg">Bravo ! 🎉 Tu as terminé le quiz !</p>
 						<p className="text-lg mt-2">
 							Sur cette page, tu peux découvrir ton score final et revoir chaque
-							question en détail. Pour chacune, tu verras la bonne réponse ainsi
-							que celle que tu as donnée. Si ta réponse est en rouge, ça
+							question en détails. Pour chacune, tu verras la bonne réponse
+							ainsi que celle que tu as donnée. Si ta réponse est en rouge, ça
 							signifie que tu as fait une erreur.
 						</p>
 						<p className="text-lg mt-2">
-							Prends le temps de parcourir tes résultats et devenir incollable
+							Prends le temps de parcourir tes résultats et deviens incollable
 							pour la prochaine fois. 💪
 						</p>
 					</div>
