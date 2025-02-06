@@ -4,13 +4,13 @@ const app = express();
 const cors = require("cors");
 require("dotenv").config();
 
-// app.use(
-// 	cors({
-// 		origin: process.env.FRONTEND_URL, // Your frontend URL
-// 		methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], // Allowed HTTP methods
-// 		credentials: true, // Allow cookies if needed
-// 	})
-// );
+app.use(
+	cors({
+		origin: process.env.FRONTEND_URL, // Your frontend URL
+		methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], // Allowed HTTP methods
+		credentials: true, // Allow cookies if needed
+	})
+);
 
 // Middleware to parse JSON bodies
 app.use(express.json());
