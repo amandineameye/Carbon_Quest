@@ -4,13 +4,13 @@ const app = express();
 const cors = require("cors");
 // require("dotenv").config();
 
-app.use(
-	cors({
-		origin: "https://super-carbon-quest.vercel.app/", // Your frontend URL
-		methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], // Allowed HTTP methods
-		credentials: true, // Allow cookies if needed
-	})
-);
+// app.use(
+// 	cors({
+// 		origin: "https://super-carbon-quest.vercel.app/", // Your frontend URL
+// 		methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], // Allowed HTTP methods
+// 		credentials: true, // Allow cookies if needed
+// 	})
+// );
 
 // Middleware to parse JSON bodies
 app.use(express.json());
