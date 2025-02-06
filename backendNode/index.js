@@ -4,16 +4,16 @@ const app = express();
 const cors = require("cors");
 // require("dotenv").config();
 
-// Middleware to parse JSON bodies
-app.use(express.json());
-
 app.use(
 	cors({
-		origin: "*", // Your frontend URL
+		origin: "https://super-carbon-quest.vercel.app/", // Your frontend URL
 		methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], // Allowed HTTP methods
 		credentials: true, // Allow cookies if needed
 	})
 );
+
+// Middleware to parse JSON bodies
+app.use(express.json());
 
 // Connect to MongoDB
 mongoose
