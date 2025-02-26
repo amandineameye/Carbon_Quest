@@ -16,6 +16,8 @@ const ResultsPage = () => {
 
 	const userScores = allScores.slice(0, -1);
 
+	//coucou
+
 	useEffect(() => {
 		const getAllScores = async () => {
 			try {

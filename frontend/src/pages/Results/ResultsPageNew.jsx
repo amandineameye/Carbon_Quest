@@ -10,7 +10,7 @@ const ResultsPage = () => {
 	const location = useLocation();
 	const [allScores, setAllScores] = useState([]);
 	const { username, currentScore, answersToNumbersArray } = location.state;
-	const apiURL = "https://carbon-quest-api.vercel.app/";
+	// const apiURL = "https://carbon-quest-api.vercel.app/";
 	// const apiURL = "http://127.0.0.1:3001";
 
 	const userScores = allScores.slice(0, -1);
@@ -19,7 +19,9 @@ const ResultsPage = () => {
 		const getAllScores = async () => {
 			try {
 				const response = await axios.get(
-					apiURL + "oldScores?username=" + username
+					"https://super-carbon-quest-api.vercel.app/" +
+						"oldScores?username=" +
+						username
 				);
 
 				setAllScores(response.data.scoresArray);
