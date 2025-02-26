@@ -19,9 +19,9 @@ const ResultsPage = () => {
 	useEffect(() => {
 		const getAllScores = async () => {
 			try {
-				const response = await axios.get(
-					apiURL + "oldScores?username=" + username
-				);
+				const response = await axios.get(apiURL + "oldScores", null, {
+					params: { username },
+				});
 				console.log(response.data.scoresArray);
 				setAllScores(response.data.scoresArray);
 			} catch (error) {
