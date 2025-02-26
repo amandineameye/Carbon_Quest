@@ -155,7 +155,7 @@ app.get("/oldScores", async (req, res) => {
 		const userScores = await User.findOne({ username }, { scores: 1, _id: 0 });
 
 		if (!userScores) {
-			return res.status(404).json({ error: "User not found" });
+			return res.status(403).json({ error: "User not found" });
 		}
 
 		console.log("Got old scores: ", userScores.scores);
