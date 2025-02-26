@@ -7,9 +7,8 @@ const cors = require("cors");
 app.use(
 	cors({
 		origin: process.env.FRONTEND_URL, // Your frontend URL
-		methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], // Allowed HTTP methods
+		methods: ["GET", "POST", "PUT", "DELETE", "PATCH"], // Allowed HTTP methods
 		credentials: true, // Allow cookies if needed
-		allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept"],
 	})
 );
 
