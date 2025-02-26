@@ -9,6 +9,7 @@ app.use(
 		origin: process.env.FRONTEND_URL, // Your frontend URL
 		methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], // Allowed HTTP methods
 		credentials: true, // Allow cookies if needed
+		allowedHeaders: ["Origin", "X-Requested-With", "Content-Type", "Accept"],
 	})
 );
 
@@ -155,7 +156,7 @@ app.get("/oldScores", async (req, res) => {
 		const userScores = await User.findOne({ username }, { scores: 1, _id: 0 });
 
 		if (!userScores) {
-			return res.status(403).json({ error: "User not found" });
+			return res.status(404).json({ error: "User not found" });
 		}
 
 		console.log("Got old scores: ", userScores.scores);
