@@ -7,8 +7,11 @@ export const AccordionHeader = ({
 	toggleAccordion,
 	headerTitle,
 }) => {
+
+	//If the accordion is open, show the up chevron, otherwise show the down chevron
 	const icon = accordionOpen ? <FaChevronUp /> : <FaChevronDown />;
 
+	//Returns the question header and the chevron inside a button tag with an onClick event
 	return (
 		<div className="accordion-header">
 			<button
@@ -28,6 +31,10 @@ export const AccordionPanel = ({
 	isAnswerCorrect,
 	href,
 }) => {
+
+	//Hides the whole parent div if accordionOpen is equal to false
+	//grid-rows-[0fr] collapses the height of the grid row to 0
+	//opacity-0 makes sure the element is completely invisible 
 	const className = accordionOpen
 		? "grid-rows-[1fr] opacity-100"
 		: "grid-rows-[0fr] opacity-0";
