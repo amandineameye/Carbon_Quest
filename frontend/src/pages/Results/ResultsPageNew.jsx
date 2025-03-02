@@ -70,12 +70,13 @@ const ResultsPage = () => {
 
 				<div className="container py-16">
 					<div className="py-2 px-6 bg-white rounded-lg w-9/12 mx-auto">
-						{questions.map(({ headerTitle, content, href }, index) => (
+						{questions.map(({ question, explanation, link, answer }, index) => (
 							<Accordion
-								headerTitle={headerTitle}
-								content={content}
+								question={question}
+								explanation={explanation}
 								isAnswerCorrect={Boolean(answersToNumbersArray?.[index])}
-								href={href}
+								link={link}
+								rightAnswer={answer}
 							/>
 						))}
 					</div>

@@ -5,7 +5,7 @@ import { FaChevronUp } from "react-icons/fa6";
 export const AccordionHeader = ({
 	accordionOpen,
 	toggleAccordion,
-	headerTitle,
+	question,
 }) => {
 
 	//If the accordion is open, show the up chevron, otherwise show the down chevron
@@ -18,7 +18,7 @@ export const AccordionHeader = ({
 				className="accordion-btn flex justify-between w-full text-left font-semibold text-title font-title text-lg"
 				onClick={() => toggleAccordion()}
 			>
-				<div>{headerTitle}</div>
+				<div>{question}</div>
 				<span>{icon}</span>
 			</button>
 		</div>
@@ -26,10 +26,11 @@ export const AccordionHeader = ({
 };
 
 export const AccordionPanel = ({
-	content,
+	explanation,
 	accordionOpen,
 	isAnswerCorrect,
-	href,
+	rightAnswer,
+	link,
 }) => {
 
 	//Hides the whole parent div if accordionOpen is equal to false
@@ -64,7 +65,7 @@ export const AccordionPanel = ({
 	);
 };
 
-export const Accordion = ({ headerTitle, content, href, isAnswerCorrect }) => {
+export const Accordion = ({ explanation, question, link, rightAnswer, isAnswerCorrect }) => {
 	const [accordionOpen, setAccordionOpen] = useState(false);
 
 	const toggleAccordion = () => {
@@ -76,13 +77,14 @@ export const Accordion = ({ headerTitle, content, href, isAnswerCorrect }) => {
 			<AccordionHeader
 				accordionOpen={accordionOpen}
 				toggleAccordion={toggleAccordion}
-				headerTitle={headerTitle}
+				question={question}
 			/>
 			<AccordionPanel
-				content={content}
+				explanation={explanation}
 				accordionOpen={accordionOpen}
-				href={href}
+				link={link}
 				isAnswerCorrect={isAnswerCorrect}
+				rightAnswer={rightAnswer}
 			/>
 		</div>
 	);
