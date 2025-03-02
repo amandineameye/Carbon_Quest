@@ -26,8 +26,8 @@ export const AccordionHeader = ({
 };
 
 export const AccordionPanel = ({
-	explanation,
 	accordionOpen,
+	explanation,
 	isAnswerCorrect,
 	rightAnswer,
 	link,
@@ -40,6 +40,11 @@ export const AccordionPanel = ({
 		? "grid-rows-[1fr] opacity-100"
 		: "grid-rows-[0fr] opacity-0";
 
+	const booleanPlayerAnswer = isAnswerCorrect ? rightAnswer : !rightAnswer;
+	const stringPlayerAnswer = booleanPlayerAnswer ? "Vrai" : "Faux";
+
+	console.log("stringPlayerAnswer: ", stringPlayerAnswer);
+
 	return (
 		<div
 			className={`grid overflow-hidden transition-200 text-text ${className}`}
@@ -48,11 +53,12 @@ export const AccordionPanel = ({
 				{accordionOpen && (
 					<>
 						<div className="accordion-panel-content pt-3 pr-3">
-							<p className={isAnswerCorrect ? "resTrue" : "resFalse"}>Faux</p>
-							<p className="mb-2">{content}</p>
+							{/* Shows the player's answer in red if it's wrong and in green if it's right */}
+							<p className={isAnswerCorrect ? "resTrue" : "resFalse"}>{stringPlayerAnswer}</p>
+							<p className="mb-2">{explanation}</p>
 							<a
 								className="flex justify-self-end mb-3 cursor-pointer font-semibold text-custom-pink hover:text-custom-purple underline"
-								href={href}
+								href={link}
 								target="_blank"
 							>
 								Plus d'infos
@@ -65,7 +71,7 @@ export const AccordionPanel = ({
 	);
 };
 
-export const Accordion = ({ explanation, question, link, rightAnswer, isAnswerCorrect }) => {
+export const Accordion = ({ question, rightAnswer, explanation, link, isAnswerCorrect }) => {
 	const [accordionOpen, setAccordionOpen] = useState(false);
 
 	const toggleAccordion = () => {
@@ -80,8 +86,8 @@ export const Accordion = ({ explanation, question, link, rightAnswer, isAnswerCo
 				question={question}
 			/>
 			<AccordionPanel
-				explanation={explanation}
 				accordionOpen={accordionOpen}
+				explanation={explanation}
 				link={link}
 				isAnswerCorrect={isAnswerCorrect}
 				rightAnswer={rightAnswer}
