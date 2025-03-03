@@ -1,6 +1,6 @@
 import HomePage from "./pages/Home/HomePage";
 import GamePage from "./pages/Game/GamePage";
-import ResultsPage from "./pages/Results/ResultsPageNew";
+import ResultsPage from "./pages/Results/ResultsPage";
 import App from "./App";
 
 const routes = [

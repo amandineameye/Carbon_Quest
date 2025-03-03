@@ -10,15 +10,16 @@ const ResultsPage = () => {
 	const location = useLocation();
 	const [allScores, setAllScores] = useState([]);
 	const { username, currentScore, answersToNumbersArray } = location.state;
-	const apiURL = "https://super-carbon-quest-api.vercel.app/"
+	// const apiURL = "https://carbon-quest-api.vercel.app/";
+	// const apiURL = "http://127.0.0.1:3001";
 
 	const userScores = allScores.slice(0, -1);
 
 	useEffect(() => {
 		const getAllScores = async () => {
 			try {
-				const response = await axios.get( apiURL
-					 +
+				const response = await axios.get(
+					"https://super-carbon-quest-api.vercel.app/" +
 						"oldScores?username=" +
 						username
 				);
@@ -70,13 +71,12 @@ const ResultsPage = () => {
 
 				<div className="container py-16">
 					<div className="py-2 px-6 bg-white rounded-lg w-9/12 mx-auto">
-						{questions.map(({ question, explanation, link, answer }, index) => (
+						{questions.map(({ headerTitle, content, href }, index) => (
 							<Accordion
-								question={question}
-								explanation={explanation}
+								headerTitle={headerTitle}
+								content={content}
 								isAnswerCorrect={Boolean(answersToNumbersArray?.[index])}
-								link={link}
-								rightAnswer={answer}
+								href={href}
 							/>
 						))}
 					</div>
