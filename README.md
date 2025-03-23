@@ -18,16 +18,15 @@ Climb to the top of the canopy while answering eco-friendly web development ques
 
 ---
 
-## 🎮 Try Carbon Quest
+## 🎮 Demo
 
-🚀 **Play online:** [super-carbon-quest.vercel.app](https://super-carbon-quest.vercel.app/)
+Create an account (email will not be stored) or use:  
+**Username:** Test  
+**Password:** Test12345
 
-📝 **Test account:**
+🚀 [Play Now](https://super-carbon-quest.vercel.app/)
 
-```plaintext
-Username: Test
-Password: Test12345
-```
+![Carbon Quest Demo](https://github.com/amandineameye/Carbon_Quest/blob/main/frontend/src/assets/carbon_quest.gif?raw=true)
 
 ---
 
