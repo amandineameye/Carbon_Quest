@@ -69,7 +69,7 @@ export const questions = [
     answer: false,
     explanation:
       "Le mode sombre économise de l’énergie surtout sur les écrans OLED, mais l’impact est moindre sur les écrans LCD.",
-    link: "#",
+    link: "https://internet2000.net/blog/le-dark-mode-vraiment-efficace-pour-reduire-l-empreinte-carbone",
   },
   {
     question:
