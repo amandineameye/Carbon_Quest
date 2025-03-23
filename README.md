@@ -1,56 +1,79 @@
-# Carbon Quest 🤖
+# Carbon Quest 🌳
 
-Carbon Quest est un jeu éducatif de plates-formes qui vous invite à explorer les enjeux du Green IT, l’ensemble des pratiques visant à réduire l’impact environnemental des technologies numériques, de leur conception à leur utilisation.
+🚨 The game is currently available in **French** only.
 
-🎯 But du jeu<br />
-Votre mission est de grimper jusqu’au sommet de la canopée, tout en répondant correctement à un maximum de questions.
+**Carbon Quest** is an educational platformer about **Green IT**, where you **test and explore** best practices to reduce the environmental impact of digital technologies.
 
-👾 Comment jouer ?<br />
-Utilisez les touches directionnelles et la barre d'espace pour vous déplacer vers le haut de la forêt.
-À chaque palier, un esprit de la forêt vous posera une question.
-Une mauvaise réponse ne vous empêche pas de continuer à monter, mais elle affectera le résultat final.
-Une fois au sommet, vous pourrez consulter vos réponses, voir vos erreurs, et en apprendre davantage sur le Green IT.
+## 🎯 Goal
 
-💪 Parviendrez-vous à réduire la pollution numérique ?
+Climb to the **top of the canopy** while answering **eco-friendly web development questions**. The more correct answers you get, the **better your score**!
 
+## 👾 How to Play
 
-## Visuals
+⬆ **Move** using the **arrow keys** and **space bar**.  
+🌿 **Answer** questions from **forest spirits** along the way.  
+❌ **Wrong answers** won’t stop you, but they will **impact your final score**.  
+🏆 **Reach the top**, review your answers, and **learn more about Green IT**!
 
-![Imgur](https://tinyurl.com/bd2da62c)
-![Imgur](https://tinyurl.com/yzjzudkw)
-![Imgur](https://tinyurl.com/45rrddxc)
-![Imgur](https://tinyurl.com/2yemrhrp)
+💪 **Can you reduce digital pollution?**
 
+---
 
-## Installation
-### Backend
-Installer la base de données en suivant les instructions du fichier `info.md` du dossier `/backend`
+# 🔧 Prerequisites
 
-Lancer le serveur
+Make sure you have **Node.js** and **Git** installed on your machine.
+
+## 🚀 Frontend Setup
+
+Create a `.env` file in the frontend directory and add:
+
+```env
+VITE_API_URL=http://localhost:3001/
 ```
-php -S localhost:8000
- ```
 
+Run:
 
- ### Frontend
-Installer les dépendances
- ```
- npm i
- ```
+```sh
+npm install
+npm run dev
+```
 
-Lancer le serveur
- ```
- npm run dev
- ```
+## 🖥️ Backend Setup
 
-## Tester le jeu
-👩‍💻 Pseudo : User
-🔒 Mot de passe : password
+Create a `.env` file in the backend directory and add:
 
- ### Dépendences
-* Axios
-* React Icons
-* React Router Dom
-* React Unity Webgl
-* Zod
-* React Hook Form
+```env
+FRONTEND_URL=http://localhost:5173
+PORT=3001
+MONGODB_CONNECTION_STRING=your-mongodb-connection-string
+```
+
+Run:
+
+```sh
+npm install
+npm run dev
+```
+
+## 🗄️ Database Setup
+
+### Option 1: Using MongoDB Atlas (Cloud)
+
+1. Create a **MongoDB Atlas** account.
+2. Set up a **free cluster**.
+3. In the **Atlas dashboard**, go to **Network Access** and **add your IP address** _(or use `0.0.0.0/0` to allow all connections)_.
+4. Update your backend `.env` file with your own connection string:
+
+```env
+MONGODB_CONNECTION_STRING=your-mongodb-connection-string
+```
+
+### Option 2: Using Local MongoDB
+
+1. Install **MongoDB Community Edition** from [MongoDB’s website](https://www.mongodb.com/try/download/community).
+2. Start the **MongoDB server** _(usually by running `mongod`)_.
+3. Update your backend `.env` file:
+
+```env
+MONGODB_CONNECTION_STRING=mongodb://localhost:27017
+```
