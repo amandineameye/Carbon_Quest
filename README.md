@@ -18,22 +18,24 @@ Climb to the top of the canopy while answering eco-friendly web development ques
 
 ---
 
-## 🎮 Demo
+## 🎮 Try Carbon Quest
 
-🚀 **Play Carbon Quest now:** [super-carbon-quest.vercel.app](https://super-carbon-quest.vercel.app/)
+🚀 **Play online:** [super-carbon-quest.vercel.app](https://super-carbon-quest.vercel.app/)
 
-📝 **Try it out:**
+📝 **Test account:**
 
-- Create an account (**email is not stored**)
-- OR use:
-  ```plaintext
-  Username: Test
-  Password: Test12345
-  ```
+```plaintext
+Username: Test
+Password: Test12345
+```
 
 ---
 
-## 🛠 Prerequisites
+## 💻 Local Setup
+
+To run Carbon Quest locally, follow these steps.
+
+### 📌 Prerequisites
 
 Make sure you have **Node.js** and **Git** installed on your machine.
 
@@ -97,3 +99,12 @@ MONGODB_CONNECTION_STRING=your-mongodb-connection-string
 ```env
 MONGODB_CONNECTION_STRING=mongodb://localhost:27017
 ```
+
+---
+
+### ✨ Improvements
+
+- **"Local Setup"** makes it even more obvious that this section is about self-hosting.
+- The flow is **clearer** between playing online and setting up locally.
+
+This should now be **perfectly structured**! 🚀 Let me know if you need any final tweaks. 😊
