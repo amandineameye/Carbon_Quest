@@ -1,6 +1,7 @@
 # Carbon Quest 🌳
 
 🚨 **The game is currently available in French only.**  
+
 Carbon Quest is an educational platformer about Green IT, where you test and explore best practices to reduce the environmental impact of digital technologies.
 
 ## 🎯 Goal
