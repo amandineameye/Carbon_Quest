@@ -1,9 +1,9 @@
-import { Accordion } from "../../components/Accordion/Accordion.jsx";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { questions } from "../../data/questions.js";
 import ScoreResult from "../../components/ScoreResult/ScoreResult.jsx";
+import { Accordion } from "../../components/Accordion/Accordion.jsx";
 
 const ResultsPage = () => {
 	const navigate = useNavigate();
@@ -11,7 +11,6 @@ const ResultsPage = () => {
 	const [allScores, setAllScores] = useState([]);
 	const { username, currentScore, answersToNumbersArray } = location.state;
 
-	// const apiURL = "https://super-carbon-quest-api.vercel.app/"
 	const apiURL = import.meta.env.VITE_API_URL;
 	
 	//Excludes the last element (the current score) and shows the 5 previous ones
@@ -54,7 +53,6 @@ const ResultsPage = () => {
 					<div className="container text-center mt-12">
 						<h2>Tes précédents scores</h2>
 						<div className="flex justify-center gap-4">
-							{/* Ici, il faut afficher les scores du tableau qu'on reçoit */}
 							{userScores.map((score) => (
 								<p className="rounded-full bg-text w-12 h-12 flex items-center justify-center text-white text-2xl font-semibold">
 									{score}
