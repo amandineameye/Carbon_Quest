@@ -12,17 +12,16 @@ const ResultsPage = () => {
 	const location = useLocation();
 	const [allScores, setAllScores] = useState([]);
 	const { username, currentScore, answersToNumbersArray } = location.state;
-	// const apiURL = import.meta.env.VITE_API_URL;
+
+	const apiURL = import.meta.env.VITE_API_URL;
 
 	const userScores = allScores.slice(0, -1);
-
-	//coucou
 
 	useEffect(() => {
 		const getAllScores = async () => {
 			try {
 				const response = await axios.get(
-					"https://super-carbon-quest-api.vercel.app/" + "oldScores",
+					apiURL + "oldScores",
 					null,
 					{
 						params: { username },

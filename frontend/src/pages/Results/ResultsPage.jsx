@@ -10,8 +10,10 @@ const ResultsPage = () => {
 	const location = useLocation();
 	const [allScores, setAllScores] = useState([]);
 	const { username, currentScore, answersToNumbersArray } = location.state;
-	const apiURL = "https://super-carbon-quest-api.vercel.app/"
 
+	// const apiURL = "https://super-carbon-quest-api.vercel.app/"
+	const apiURL = import.meta.env.VITE_API_URL;
+	
 	//Excludes the last element (the current score) and shows the 5 previous ones
 	const userScores = allScores.slice(-6, -1);
 
