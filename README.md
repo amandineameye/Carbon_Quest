@@ -35,6 +35,7 @@ Create an account (email will not be stored) or use:
 - **Frontend:** React, Vite
 - **Backend:** Node.js, Express
 - **Database:** MongoDB
+- **Game Engine**: Unity, C#
 - **Hosting:** Vercel
 
 ---
