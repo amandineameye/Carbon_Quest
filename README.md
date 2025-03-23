@@ -99,12 +99,3 @@ MONGODB_CONNECTION_STRING=your-mongodb-connection-string
 ```env
 MONGODB_CONNECTION_STRING=mongodb://localhost:27017
 ```
-
----
-
-### ✨ Improvements
-
-- **"Local Setup"** makes it even more obvious that this section is about self-hosting.
-- The flow is **clearer** between playing online and setting up locally.
-
-This should now be **perfectly structured**! 🚀 Let me know if you need any final tweaks. 😊
