@@ -14,7 +14,8 @@ const GamePage = () => {
 	const navigate = useNavigate();
 	const location = useLocation();
 	const username = location.state?.username;
-	const apiURL = "https://super-carbon-quest-api.vercel.app/";
+	
+	const apiURL = import.meta.env.VITE_API_URL;
 
 	const handleEndGame = useCallback(
 		async (answersString) => {

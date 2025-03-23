@@ -23,7 +23,8 @@ const Signup = ({ onSwitchToLogin, onSuccessfulConnection }) => {
 	const [showPassword, setShowPassword] = useState(false);
 	const [errorMessage, setErrorMessage] = useState("");
 	const navigate = useNavigate();
-	const apiURL = "https://super-carbon-quest-api.vercel.app/";
+
+	const apiURL = import.meta.env.VITE_API_URL;
 
 	const {
 		register,
