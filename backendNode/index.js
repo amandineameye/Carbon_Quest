@@ -17,7 +17,7 @@ app.use(express.json());
 
 // Connect to MongoDB
 mongoose
-  .connect(process.env.MONGODB_CONNECTION_STRING)
+  .connect(process.env.MONGODB_CONNECTION_STRING, { dbName: "carbonQuestDB" })
   .then(() => console.log("MongoDB connected successfully"))
   .catch((err) => console.log("Error connecting to MongoDB:", err));
 
