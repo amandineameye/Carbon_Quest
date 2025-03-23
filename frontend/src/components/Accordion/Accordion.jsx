@@ -54,7 +54,7 @@ export const AccordionPanel = ({
 					<>
 						<div className="accordion-panel-content pt-3 pr-3">
 							{/* Shows the player's answer in red if it's wrong and in green if it's right */}
-							<p className={isAnswerCorrect ? "resTrue" : "resFalse"}>Ta réponse : {stringPlayerAnswer}</p>
+							<p className={isAnswerCorrect ? "resTrue" : "resFalse"}>Tu as répondu : {stringPlayerAnswer}</p>
 							<p className="mb-2">{explanation}</p>
 							<a
 								className="flex justify-self-end mb-3 cursor-pointer font-semibold text-custom-pink hover:text-custom-purple underline"
