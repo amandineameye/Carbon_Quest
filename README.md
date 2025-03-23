@@ -30,6 +30,15 @@ Create an account (email will not be stored) or use:
 
 ---
 
+## 🛠 Tech Stack
+
+- **Frontend:** React, Vite
+- **Backend:** Node.js, Express
+- **Database:** MongoDB
+- **Hosting:** Vercel
+
+---
+
 ## 💻 Local Setup
 
 To run Carbon Quest locally, follow these steps.
@@ -98,3 +107,20 @@ MONGODB_CONNECTION_STRING=your-mongodb-connection-string
 ```env
 MONGODB_CONNECTION_STRING=mongodb://localhost:27017
 ```
+
+---
+
+## ✨ Future Improvements
+
+- 📱 **Mobile Version:**
+  - Currently, the game is not optimized for mobile. A fully responsive version is planned.
+- 🎵 **Music Handling:**
+  - When returning to the home page, the music stops and restarts when playing again.
+  - Add a button to stop the music manually.
+- 🔄 **Game Flow:**
+  - Refreshing the page during gameplay redirects to the home page.
+  - Improve question handling: currently, skipping a question automatically selects the opposite answer.
+- 🛠 **User Experience:**
+  - Fix an issue where login/registration inputs sometimes don't work on the home page.
+  - Implement an English version.
+  - Allow users to reset their password via email.
