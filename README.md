@@ -1,27 +1,43 @@
 # Carbon Quest 🌳
 
-🚨 The game is currently available in **French** only.
-
-**Carbon Quest** is an educational platformer about **Green IT**, where you **test and explore** best practices to reduce the environmental impact of digital technologies.
+🚨 **The game is currently available in French only.**  
+Carbon Quest is an educational platformer about Green IT, where you test and explore best practices to reduce the environmental impact of digital technologies.
 
 ## 🎯 Goal
 
-Climb to the **top of the canopy** while answering **eco-friendly web development questions**. The more correct answers you get, the **better your score**!
+Climb to the top of the canopy while answering eco-friendly web development questions. The more correct answers you get, the better your score!
 
 ## 👾 How to Play
 
-⬆ **Move** using the **arrow keys** and **space bar**.  
-🌿 **Answer** questions from **forest spirits** along the way.  
-❌ **Wrong answers** won’t stop you, but they will **impact your final score**.  
-🏆 **Reach the top**, review your answers, and **learn more about Green IT**!
+⬆ Move using the arrow keys and space bar.  
+🌿 Answer questions from forest spirits along the way.  
+❌ Wrong answers won’t stop you, but they will impact your final score.  
+🏆 Reach the top, review your answers, and learn more about Green IT!
 
-💪 **Can you reduce digital pollution?**
+💪 Can you reduce digital pollution?
 
 ---
 
-# 🔧 Prerequisites
+## 🎮 Demo
+
+🚀 **Play Carbon Quest now:** [super-carbon-quest.vercel.app](https://super-carbon-quest.vercel.app/)
+
+📝 **Try it out:**
+
+- Create an account (**email is not stored**)
+- OR use:
+  ```plaintext
+  Username: Test
+  Password: Test12345
+  ```
+
+---
+
+## 🛠 Prerequisites
 
 Make sure you have **Node.js** and **Git** installed on your machine.
+
+---
 
 ## 🚀 Frontend Setup
 
@@ -38,14 +54,16 @@ npm install
 npm run dev
 ```
 
-## 🖥️ Backend Setup
+---
+
+## 🔧 Backend Setup
 
 Create a `.env` file in the backend directory and add:
 
 ```env
 FRONTEND_URL=http://localhost:5173
 PORT=3001
-MONGODB_CONNECTION_STRING=your-mongodb-connection-string
+MONGODB_CONNECTION_STRING=your mongodb connection string (see next section)
 ```
 
 Run:
@@ -55,13 +73,15 @@ npm install
 npm run dev
 ```
 
-## 🗄️ Database Setup
+---
+
+## 🗄 Database Setup
 
 ### Option 1: Using MongoDB Atlas (Cloud)
 
 1. Create a **MongoDB Atlas** account.
 2. Set up a **free cluster**.
-3. In the **Atlas dashboard**, go to **Network Access** and **add your IP address** _(or use `0.0.0.0/0` to allow all connections)_.
+3. In the **Atlas dashboard**, go to **Network Access** and add your **IP address** (or use `0.0.0.0/0` to allow all connections).
 4. Update your backend `.env` file with your own connection string:
 
 ```env
@@ -71,7 +91,7 @@ MONGODB_CONNECTION_STRING=your-mongodb-connection-string
 ### Option 2: Using Local MongoDB
 
 1. Install **MongoDB Community Edition** from [MongoDB’s website](https://www.mongodb.com/try/download/community).
-2. Start the **MongoDB server** _(usually by running `mongod`)_.
+2. Start the MongoDB server (usually by running `mongod`).
 3. Update your backend `.env` file:
 
 ```env
