@@ -49,7 +49,7 @@ To run Carbon Quest locally, follow these steps.
 
 Ensure you have **Node.js** (v23.7.0 or a compatible version) installed on your machine.
 
-If you haven’t installed it yet, you can get it from the [official Node.js website](https://nodejs.org/en/download/).
+If you haven’t installed it yet, you can get it from the [official Node.js website](https://nodejs.org/en/download).
 
 ---
 
