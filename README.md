@@ -1,6 +1,6 @@
 # Carbon Quest 🌳
 
-🚨 **The game is currently available in French only.**  
+🚨 **The game is currently available in French only.**
 
 Carbon Quest is an educational platformer about Green IT, where you test and explore best practices to reduce the environmental impact of digital technologies.
 
@@ -33,7 +33,7 @@ Create an account (email will not be stored) or use:
 
 ## 🛠 Tech Stack
 
-- **Frontend:** React, Vite
+- **Frontend:** React, Tailwind, Vite
 - **Backend:** Node.js, Express
 - **Database:** MongoDB
 - **Game Engine**: Unity, C#
@@ -47,7 +47,9 @@ To run Carbon Quest locally, follow these steps.
 
 ### 📌 Prerequisites
 
-Make sure you have **Node.js** (v23.7.0 or compatible version) and **Git** installed on your machine.
+Ensure you have **Node.js** (v23.7.0 or a compatible version) installed on your machine.
+
+If you haven’t installed it yet, you can get it from the [official Node.js website](https://nodejs.org/en/download/).
 
 ---
 
