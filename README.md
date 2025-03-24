@@ -33,7 +33,7 @@ Create an account (email will not be stored) or use:
 
 ## 🛠 Tech Stack
 
-- **Frontend:** React, Tailwind, Vite
+- **Frontend:** React, Tailwind CSS
 - **Backend:** Node.js, Express
 - **Database:** MongoDB
 - **Game Engine**: Unity, C#
