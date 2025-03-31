@@ -25,7 +25,7 @@ Create an account (email will not be stored) or use:
 **Username:** Test  
 **Password:** Test12345
 
-[Play Now](https://super-carbon-quest.vercel.app/)
+👉 [Play Now](https://super-carbon-quest.vercel.app/)
 
 ![Carbon Quest Demo](https://github.com/amandineameye/Carbon_Quest/blob/main/frontend/src/assets/carbon_quest.gif?raw=true)
 
