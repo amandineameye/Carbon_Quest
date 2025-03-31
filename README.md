@@ -31,7 +31,7 @@ Create an account (email will not be stored) or use:
 
 ---
 
-## 🧩 Tech Stack
+## 🛠 Tech Stack
 
 - **Frontend:** React, Tailwind CSS
 - **Backend:** Node.js, Express
