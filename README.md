@@ -1,6 +1,6 @@
 # Carbon Quest 🌳
 
-🚨 **The game is currently available in French only.**
+**Note:** The game is currently available in French only.
 
 Carbon Quest is an educational platformer about Green IT, where you test and explore best practices to reduce the environmental impact of digital technologies.
 
@@ -25,13 +25,13 @@ Create an account (email will not be stored) or use:
 **Username:** Test  
 **Password:** Test12345
 
-🚀 [Play Now](https://super-carbon-quest.vercel.app/)
+[Play Now](https://super-carbon-quest.vercel.app/)
 
 ![Carbon Quest Demo](https://github.com/amandineameye/Carbon_Quest/blob/main/frontend/src/assets/carbon_quest.gif?raw=true)
 
 ---
 
-## 🛠 Tech Stack
+## 🧩 Tech Stack
 
 - **Frontend:** React, Tailwind CSS
 - **Backend:** Node.js, Express
@@ -41,7 +41,7 @@ Create an account (email will not be stored) or use:
 
 ---
 
-## 💻 Local Setup
+## 🏃‍♀️ How to Run Locally
 
 To run Carbon Quest locally, follow these steps.
 
@@ -53,7 +53,7 @@ If you haven’t installed it yet, you can get it from the [official Node.js web
 
 ---
 
-## 🚀 Frontend Setup
+## 🏗️ Frontend Setup
 
 Create a `.env` file in the frontend directory and add:
 
@@ -70,7 +70,7 @@ npm run dev
 
 ---
 
-## 🔧 Backend Setup
+## ⚙️ Backend Setup
 
 Create a `.env` file in the backend directory and add:
 
@@ -114,7 +114,7 @@ MONGODB_CONNECTION_STRING=mongodb://localhost:27017
 
 ---
 
-## ✨ Future Improvements
+## 🔮 Future Improvements
 
 - 📱 **Mobile Version:**
   - Currently, the game is not optimized for mobile. A fully responsive version is planned.
