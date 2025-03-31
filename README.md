@@ -19,7 +19,7 @@ Can you reduce digital pollution?
 
 ---
 
-## 🎮 Demo
+## 🚀 Live Demo
 
 Create an account (email will not be stored) or use:  
 **Username:** Test  
