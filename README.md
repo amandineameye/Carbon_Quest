@@ -8,7 +8,7 @@ Carbon Quest is an educational platformer about Green IT, where you test and exp
 
 Climb to the top of the canopy while answering eco-friendly web development questions. The more correct answers you get, the better your score!
 
-## 👾 How to Play
+## 🎮 How to Play
 
 - Move using the arrow keys and space bar.
 - Answer questions from forest spirits along the way.
