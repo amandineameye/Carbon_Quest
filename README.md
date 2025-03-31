@@ -10,12 +10,12 @@ Climb to the top of the canopy while answering eco-friendly web development ques
 
 ## 👾 How to Play
 
-⬆ Move using the arrow keys and space bar.  
-🌿 Answer questions from forest spirits along the way.  
-❌ Wrong answers won’t stop you, but they will impact your final score.  
-🏆 Reach the top, review your answers, and learn more about Green IT!
+- Move using the arrow keys and space bar.
+- Answer questions from forest spirits along the way.
+- Wrong answers won’t stop you, but they will impact your final score.
+- Reach the top, review your answers, and learn more about Green IT!
 
-💪 Can you reduce digital pollution?
+Can you reduce digital pollution?
 
 ---
 
@@ -43,17 +43,10 @@ Create an account (email will not be stored) or use:
 
 ## 🏃‍♀️ How to Run Locally
 
-To run Carbon Quest locally, follow these steps.
-
-### 📌 Prerequisites
-
 Ensure you have **Node.js** (v23.7.0 or a compatible version) installed on your machine.
-
 If you haven’t installed it yet, you can get it from the [official Node.js website](https://nodejs.org/en/download).
 
----
-
-## 🏗️ Frontend Setup
+## Frontend Setup
 
 Create a `.env` file in the frontend directory and add:
 
@@ -68,9 +61,7 @@ npm install
 npm run dev
 ```
 
----
-
-## ⚙️ Backend Setup
+## Backend Setup
 
 Create a `.env` file in the backend directory and add:
 
@@ -89,7 +80,7 @@ npm run dev
 
 ---
 
-## 🗄 Database Setup
+## Database Setup
 
 ### Option 1: Using MongoDB Atlas (Cloud)
 
@@ -116,15 +107,20 @@ MONGODB_CONNECTION_STRING=mongodb://localhost:27017
 
 ## 🔮 Future Improvements
 
-- 📱 **Mobile Version:**
-  - Currently, the game is not optimized for mobile. A fully responsive version is planned.
-- 🎵 **Music Handling:**
+- **Mobile Version:**
+  Currently, the game is not optimized for mobile. A fully responsive version is planned.
+
+- **Music Handling:**
+
   - When returning to the home page, the music stops and restarts when playing again.
   - Add a button to stop the music manually.
-- 🔄 **Game Flow:**
+
+- **Game Flow:**
+
   - Refreshing the page during gameplay redirects to the home page.
   - Improve question handling: currently, skipping a question automatically selects the opposite answer.
-- 🛠 **User Experience:**
+
+- **User Experience:**
   - Fix an issue where login/registration inputs sometimes don't work on the home page.
   - Implement an English version.
   - Allow users to reset their password via email.
